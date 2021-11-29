@@ -1,9 +1,12 @@
 import React from "react";
-import {View, Text, TouchableOpacity} from "react-native";
+import {View, Text, Pressable} from "react-native";
+import {useNavigation} from '@react-navigation/native';
 
-const Transaction = (props) => {
+const Transaction = ({style}) => {
+    const navigation = useNavigation();
+
     return (
-        <TouchableOpacity>
+        <Pressable onPress={() => navigation.navigate({name: 'AddNewTransactionScreen'})}>
             <View
                 style={{
                     backgroundColor: '#ffffff',
@@ -11,7 +14,7 @@ const Transaction = (props) => {
                     marginBottom: 10,
                     borderRadius: 8,
                     paddingHorizontal: 10
-                    , ...props.style
+                    , ...style
                 }}>
 
                 <View style={{
@@ -59,7 +62,7 @@ const Transaction = (props) => {
                     </View>
                 </View>
             </View>
-        </TouchableOpacity>
+        </Pressable>
     )
 }
 
