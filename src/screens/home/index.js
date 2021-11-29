@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, ScrollView} from 'react-native';
+import {Text, View, ScrollView, Touchable, TouchableOpacity} from 'react-native';
 import Animated, {
     useSharedValue,
     withTiming,
@@ -7,51 +7,54 @@ import Animated, {
     Easing,
 } from 'react-native-reanimated';
 import Transaction from "../../components/transaction";
+import { Ionicons } from '@expo/vector-icons';
 
 const HomeScreen = ({navigation}) => {
     return (
         <View>
             <View style={{
-                backgroundColor: '#4749A1',
-                paddingHorizontal: 10,
+                backgroundColor: '#7779e8',
+                paddingHorizontal: 20,
                 height: 200,
-                justifyContent: 'center'
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center'
             }}>
-                <Text style={{
-                    color: '#ffffff',
-                    fontSize: 22,
-                    fontWeight: 'bold'
-                }}>
-                    Allie Collins
-                </Text>
+                <View>
+                    <Text style={{
+                        color: '#ffffff',
+                        fontSize: 28,
+                        fontWeight: 'bold'
+                    }}>
+                        Allie Collins
+                    </Text>
+                </View>
+
+                <TouchableOpacity>
+                    <Ionicons name="settings-outline" size={24} color="white" />
+                </TouchableOpacity>
             </View>
 
             <View style={{
-                backgroundColor: '#d28686',
+                backgroundColor: '#e7e7e7',
                 height: '100%',
-                paddingHorizontal: 10,
+                paddingHorizontal: 20,
             }}>
                     <View
                         style={{
-                            backgroundColor: '#d28686',
+                            marginTop: -40
                         }}
                     >
 
-                        <Transaction
-                            style={{
-                                marginTop: -40,
-                            }}>
-
-                        </Transaction>
-
-
-                        {
-                            [...Array(10)].map((el, index) => {
-                                return (
-                                    <Transaction key={index}/>
-                                )
-                            })
-                        }
+                        <ScrollView>
+                            {
+                                [...Array(10)].map((el, index) => {
+                                    return (
+                                        <Transaction key={index}/>
+                                    )
+                                })
+                            }
+                        </ScrollView>
                     </View>
             </View>
         </View>
