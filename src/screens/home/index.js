@@ -1,58 +1,43 @@
 import React, {useState} from 'react';
-import {Text, View, ScrollView, Button, Pressable, Alert, Modal, StyleSheet} from 'react-native';
+import {Text, View, ScrollView, ImageBackground, Pressable, Alert, Modal, StyleSheet} from 'react-native';
 import Transaction from "../../components/transaction";
 import {Ionicons} from '@expo/vector-icons';
 
+import FooterSection from "./FooterSection";
+
 const CONTENT_HORIZONTAL_PADDING = 20;
 
+const entries = [1, 2, 3, 5, 6, 7, 9];
+
 const HomeScreen = ({navigation}) => {
-    const [modalVisible, setModalVisible] = useState(false);
-
     return (
-        <View>
-            <Modal
-                animationType="slide"
-                transparent={true}
-                visible={modalVisible}
-                onRequestClose={() => {
-                    Alert.alert('Modal has been closed.');
-                    setModalVisible(!modalVisible);
-                }}>
-
-
-                <View style={styles.modalContainer}>
-                    <View style={styles.modalView}>
-                        <Pressable
-                            style={[styles.button]}
-                            onPress={() => setModalVisible(!modalVisible)}>
-                            <Text style={styles.textStyle}>
-                                <Ionicons name="times-outline" size={24} color="white"/>
-                            </Text>
-                        </Pressable>
-                    </View>
-                </View>
-            </Modal>
-
-            <Pressable style={{
-                zIndex: 100,
-                height: 50,
-                width: 50,
-                position: 'absolute',
-                bottom: 230,
-                right: CONTENT_HORIZONTAL_PADDING,
-                borderRadius: 100,
-                flex: 1,
-                justifyContent: 'center',
-                alignItems: 'center',
-                backgroundColor: '#54b0de'
+        <View
+            style={{
+                height: '100%'
             }}
-                       onPress={() => setModalVisible(true)}
-            >
-                <Ionicons name="add-outline" size={24} color="white"/>
-            </Pressable>
+        >
+
+
+            {/*<Pressable style={{*/}
+            {/*    zIndex: 100,*/}
+            {/*    height: 50,*/}
+            {/*    width: 50,*/}
+            {/*    position: 'absolute',*/}
+            {/*    bottom: 230,*/}
+            {/*    right: CONTENT_HORIZONTAL_PADDING,*/}
+            {/*    borderRadius: 100,*/}
+            {/*    flex: 1,*/}
+            {/*    justifyContent: 'center',*/}
+            {/*    alignItems: 'center',*/}
+            {/*    backgroundColor: '#54b0de'*/}
+            {/*}}*/}
+            {/*           onPress={() => setModalVisible(true)}*/}
+            {/*>*/}
+            {/*    <Ionicons name="add-outline" size={24} color="white"/>*/}
+            {/*</Pressable>*/}
 
             <View style={{
-                backgroundColor: '#7779e8',
+                backgroundColor: '#4749A1',
                 paddingHorizontal: CONTENT_HORIZONTAL_PADDING,
                 height: 200,
                 flexDirection: 'row',
@@ -76,7 +61,7 @@ const HomeScreen = ({navigation}) => {
 
             <View style={{
                 backgroundColor: '#e7e7e7',
-                height: '100%',
+                height: '55%',
                 paddingHorizontal: 20,
             }}>
                 <View
@@ -87,7 +72,14 @@ const HomeScreen = ({navigation}) => {
 
                     <ScrollView>
                         {
-                            [...Array(10)].map((el, index) => {
+                            entries.map((el, index) => {
+
+                                if (entries.length === (index + 1)) {
+                                    return (
+                                        <Transaction key={index} style={{marginBottom: 80}}/>
+                                    )
+                                }
+
                                 return (
                                     <Transaction key={index}/>
                                 )
@@ -96,25 +88,22 @@ const HomeScreen = ({navigation}) => {
                     </ScrollView>
                 </View>
             </View>
+
+
+            <View style={{
+                width: '100%',
+                height: 180,
+                position: 'absolute',
+                bottom: 0,
+                flex: 1,
+                justifyContent: "center",
+                alignItems: 'center'
+            }}>
+                <FooterSection />
+            </View>
         </View>
     );
 }
 
-
-const styles = StyleSheet.create({
-    modalContainer: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: 50,
-    },
-    modalView: {
-        padding: 10,
-        backgroundColor: '#fff',
-        borderRadius: 8,
-        width: '100%',
-        height: '100%'
-    }
-});
 
 export default HomeScreen;
