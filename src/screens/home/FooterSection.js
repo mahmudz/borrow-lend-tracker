@@ -14,7 +14,6 @@ const FooterSection = () => {
                 transparent={true}
                 visible={modalVisible}
                 onRequestClose={() => {
-                    Alert.alert('Modal has been closed.');
                     setModalVisible(!modalVisible);
                 }}>
 
@@ -34,7 +33,7 @@ const FooterSection = () => {
             </Modal>
 
             <ImageBackground
-
+                tintColor={'transparent'}
                 source={require('../../../assets/homepage-footer-bg-2.png')}
                 style={footerStyles.backgroundImage}
             >
@@ -152,7 +151,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 50,
+        marginTop: 100,
     },
     modalView: {
         padding: 10,
