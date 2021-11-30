@@ -1,16 +1,16 @@
 import React from "react";
-import {View, Text, Pressable} from "react-native";
+import {View, Text, Pressable, Image} from "react-native";
 import {useNavigation} from '@react-navigation/native';
 
 const Transaction = ({style}) => {
     const navigation = useNavigation();
 
     return (
-        <Pressable onPress={() => navigation.navigate({name: 'AddNewTransactionScreen'})}>
+        <Pressable onPress={() => navigation.navigate({name: 'Home'})}>
             <View
                 style={{
                     backgroundColor: '#ffffff',
-                    height: 90,
+                    height: 80,
                     marginBottom: 10,
                     borderRadius: 8,
                     paddingHorizontal: 10
@@ -27,15 +27,15 @@ const Transaction = ({style}) => {
                         flex: 1,
                         flexDirection: 'row',
                     }}>
-                        <View
+                        <Image
+                            source={{uri: `https://i.pravatar.cc/60?u=${(new Date()).getTime()}`}}
                             style={{
-                                backgroundColor: '#b1b1b1',
-                                height: 70,
-                                width: 70,
+                                height: 60,
+                                width: 60,
                                 borderRadius: 8
                             }}
                         >
-                        </View>
+                        </Image>
 
                         <View style={{
                             paddingLeft: 10,

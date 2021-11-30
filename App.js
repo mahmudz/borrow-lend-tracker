@@ -18,8 +18,8 @@ const App = () => {
                 screenOptions={{
                     headerShown: false
                 }}
+                initialRouteName="Home"
             >
-                <Stack.Screen name="AddNewTransactionScreen" component={AddNewTransactionScreen}/>
                 <Stack.Screen name="Home" component={HomeScreen}/>
                 <Stack.Screen name="UserHistory" component={UserHistoryScreen}/>
             </Stack.Navigator>

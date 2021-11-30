@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Ridwan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-reanimated@~2.2.0
+  C:\Program Files\nodejs\node.exe C:\Users\Ridwan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-svg@12.1.1
 
 PATH: 
-  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Ridwan\bin;F:\Workspaces\evitaNtcaeR\lb\node_modules\.bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;F:\work\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\PuTTY;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Program Files\dotnet;C:\Program Files\Android\Android Studio\jre\bin;F:\SDKs\flutter\bin;G:\Drive - HasanMahmudAcc\Softwares\Utils\chromedriver;F:\Devtools\MongoDB\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.9\sbin;C:\Program Files\nodejs;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Program Files\Java\jdk-12.0.2\bin;F:\Devtools\MySQL Utilities;F:\work\mysql\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Users\Ridwan\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\Ridwan\AppData\Local\Programs\Python\Python310;F:\SDKs\v\.bin;F:\work\mysql\bin;C:\Users\Ridwan\AppData\Local\Microsoft\WindowsApps;C:\Users\Ridwan\AppData\Roaming\Composer\vendor\bin;C:\Users\Ridwan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ridwan\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Program Files\Android\Android Studio\jre\bin;C:\Program Files\JetBrains\PhpStorm 2020.1.1\bin;C:\tools\dart-sdk\bin;C:\Users\Ridwan\AppData\Roaming\Pub\Cache\bin;F:\SDKs\flutter\bin;G:\Drive - HasanMahmudAcc\Softwares\Utils\chromedriver;F:\Devtools\MongoDB\bin;C:\Program Files (x86)\GitHub CLI;C:\Users\Ridwan\AppData\Local\Programs\Fiddler;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.9\sbin;C:\Users\Ridwan\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm 2020.3.2\bin;C:\Users\Ridwan\go\bin;C:\Program Files\Java\jdk-12.0.2\bin;C:\Users\Ridwan\AppData\Local\Microsoft\WindowsApps;D:\Softwares\Neovim\bin;C:\Users\Ridwan\.mahmudz\scripts;C:\Users\Ridwan\AppData\Local\Android\Sdk\platform-tools
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Ridwan\bin;F:\Workspaces\evitaNtcaeR\borrow-lend-tracker\node_modules\.bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;F:\work\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\PuTTY;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Program Files\dotnet;C:\Program Files\Android\Android Studio\jre\bin;F:\SDKs\flutter\bin;G:\Drive - HasanMahmudAcc\Softwares\Utils\chromedriver;F:\Devtools\MongoDB\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.9\sbin;C:\Program Files\nodejs;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Go\bin;C:\Program Files\Java\jdk-12.0.2\bin;F:\Devtools\MySQL Utilities;F:\work\mysql\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Ridwan\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\Ridwan\AppData\Local\Programs\Python\Python310;F:\SDKs\v\.bin;F:\work\mysql\bin;C:\Users\Ridwan\AppData\Local\Microsoft\WindowsApps;C:\Users\Ridwan\AppData\Roaming\Composer\vendor\bin;C:\Users\Ridwan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ridwan\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Program Files\Android\Android Studio\jre\bin;C:\Program Files\JetBrains\PhpStorm 2020.1.1\bin;C:\tools\dart-sdk\bin;C:\Users\Ridwan\AppData\Roaming\Pub\Cache\bin;F:\SDKs\flutter\bin;G:\Drive - HasanMahmudAcc\Softwares\Utils\chromedriver;F:\Devtools\MongoDB\bin;C:\Program Files (x86)\GitHub CLI;C:\Users\Ridwan\AppData\Local\Programs\Fiddler;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.9\sbin;C:\Users\Ridwan\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm 2020.3.2\bin;C:\Users\Ridwan\go\bin;C:\Program Files\Java\jdk-12.0.2\bin;C:\Users\Ridwan\AppData\Local\Microsoft\WindowsApps;D:\Softwares\Neovim\bin;C:\Users\Ridwan\.mahmudz\scripts;C:\Users\Ridwan\AppData\Local\Android\Sdk\platform-tools;C:\Users\Ridwan\.yarn\bin
 
 Yarn version: 
   1.22.10
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'F:\Workspaces\evitaNtcaeR\lb\node_modules\.bin\expo'
+  Error: EPERM: operation not permitted, unlink 'F:\Workspaces\evitaNtcaeR\borrow-lend-tracker\node_modules\.bin\expo'
 
 npm manifest: 
   {
@@ -27,6 +27,7 @@ npm manifest:
       "eject": "expo eject"
     },
     "dependencies": {
+      "@expo/vector-icons": "^12.0.0",
       "@react-navigation/native": "^6.0.6",
       "@react-navigation/native-stack": "^6.2.5",
       "expo": "~43.0.2",
@@ -34,6 +35,7 @@ npm manifest:
       "react": "17.0.1",
       "react-dom": "17.0.1",
       "react-native": "0.64.3",
+      "react-native-reanimated": "~2.2.0",
       "react-native-safe-area-context": "3.3.2",
       "react-native-screens": "~3.8.0",
       "react-native-web": "0.17.1"
@@ -776,7 +778,7 @@ Lockfile:
     dependencies:
       "@babel/helper-plugin-utils" "^7.14.5"
   
-  "@babel/plugin-transform-object-assign@^7.0.0":
+  "@babel/plugin-transform-object-assign@^7.0.0", "@babel/plugin-transform-object-assign@^7.10.4":
     version "7.16.0"
     resolved "https://registry.yarnpkg.com/@babel/plugin-transform-object-assign/-/plugin-transform-object-assign-7.16.0.tgz#750c726397f1f6402fb1ceffe9d8ff3595c8a0df"
     integrity sha512-TftKY6Hxo5Uf/EIoC3BKQyLvlH46tbtK4xub90vzi9+yS8z1+O/52YHyywCZvYeLPOvv//1j3BPokLuHTWPcbg==
@@ -1204,7 +1206,7 @@ Lockfile:
       base64-js "^1.2.3"
       xmlbuilder "^14.0.0"
   
-  "@expo/vector-icons@^12.0.4":
+  "@expo/vector-icons@^12.0.0", "@expo/vector-icons@^12.0.4":
     version "12.0.5"
     resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-12.0.5.tgz#bc508ad05fb7e9a3e008704977cfec6c18aa7728"
     integrity sha512-zWvHBmkpbi1KrPma6Y+r/bsGI6MjbM1MBSe6W9A4uYMLhNI5NR4JtTnqxhf7g1XdpaDtBdv5aOWKEx4d5rxnhg==
@@ -4038,6 +4040,11 @@ Lockfile:
     dependencies:
       minimist "^1.2.5"
   
+  mockdate@^3.0.2:
+    version "3.0.5"
+    resolved "https://registry.yarnpkg.com/mockdate/-/mockdate-3.0.5.tgz#789be686deb3149e7df2b663d2bc4392bc3284fb"
+    integrity sha512-iniQP4rj1FhBdBYS/+eQv7j1tadJ9lJtdzgOpvsOHng/GbcDh2Fhdeq+ZRldrPYdXvCyfFUmFeEwEGXZB5I/AQ==
+  
   ms@2.0.0:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -4544,6 +4551,16 @@ Lockfile:
       flow-parser "^0.121.0"
       jscodeshift "^0.11.0"
       nullthrows "^1.1.1"
+  
+  react-native-reanimated@~2.2.0:
+    version "2.2.4"
+    resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.2.4.tgz#36c5d15028b0bd7d479fba5199117ac870c7a532"
+    integrity sha512-Nn648MfEEnTCEiWsl1YmfkojiLyV0NMY0EiRdDRbZNfJVfxBuyqhCxI/4Jd7aBi162qpgf8XK2mByYgvF4zLrQ==
+    dependencies:
+      "@babel/plugin-transform-object-assign" "^7.10.4"
+      fbjs "^3.0.0"
+      mockdate "^3.0.2"
+      string-hash-64 "^1.0.3"
   
   react-native-safe-area-context@3.3.2:
     version "3.3.2"
@@ -5151,6 +5168,11 @@ Lockfile:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
     integrity sha1-ucczDHBChi9rFC3CdLvMWGbONUY=
+  
+  string-hash-64@^1.0.3:
+    version "1.0.3"
+    resolved "https://registry.yarnpkg.com/string-hash-64/-/string-hash-64-1.0.3.tgz#0deb56df58678640db5c479ccbbb597aaa0de322"
+    integrity sha512-D5OKWKvDhyVWWn2x5Y9b+37NUllks34q1dCDhk/vYcso9fmhs+Tl3KR/gE4v5UNj2UA35cnX4KdVVGkG1deKqw==
   
   string-width@^4.1.0, string-width@^4.2.0:
     version "4.2.3"
